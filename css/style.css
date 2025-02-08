@@ -2,7 +2,7 @@
 	font-family: "Open Sans";
 	src: local("Open Sans Regular"), 
 		local("OpenSans-Regular"),
-		url("/mq-diplom/fonts/OpenSans-Regular.woff");
+		url("../fonts/OpenSans-Regular.woff");
 	font-weight: normal;
 }
 
@@ -10,7 +10,7 @@
 	font-family: "Open Sans";
 	src: local("Open Sans Bold"), 
 		local("OpenSans-Bold"),
-		url("/mq-diplom/fonts/OpenSans-Bold.woff");
+		url("../fonts/OpenSans-Bold.woff");
 	font-weight: bold;
 }
 
@@ -34,7 +34,7 @@ ul {
 .header {
 	margin: 0 0 53px 0;
 	padding: 0 0;
-	background-image: url("/mq-diplom/images/banner-bg.jpg");
+	background-image: url("../images/banner-bg.jpg");
 	background-repeat: no-repeat;
 	background-color: #6d6c69;
 	background-position: left top;
@@ -334,7 +334,7 @@ ul {
 	min-width: 48px;
 	background-color: #b59f5b;
 	border: none;
-	background-image: url("/mq-diplom/svg/search.svg");
+	background-image: url("../svg/search.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 38%;
@@ -503,15 +503,15 @@ ul {
 }
 
 .dribbble {
-	background-image: url(/mq-diplom/svg/001-dribbble.svg);
+	background-image: url(../svg/001-dribbble.svg);
 }
 
 .pinterest {
-	background-image: url(/mq-diplom/svg/002-pinterest.svg);
+	background-image: url(../svg/002-pinterest.svg);
 }
 
 .tumblr {
-	background-image: url(/mq-diplom/svg/003-tumblr.svg);
+	background-image: url(../svg/003-tumblr.svg);
 }
 
 .copyrights {
