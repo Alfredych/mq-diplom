@@ -617,6 +617,10 @@ ul {
 	color: #b59f5b;
 }
 
+.main-goods-caption a:hover {
+	text-decoration: underline;
+}
+
 .main-goods-inShopBox {
 	display: flex;
 	justify-content: space-between;
