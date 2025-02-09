@@ -33,8 +33,7 @@ ul {
 }
 
 .header {
-	margin: 0 0 53px 0;
-	padding: 0 0;
+	margin-bottom: 53px;
 	background-image: url("../images/banner-bg.jpg");
 	background-repeat: no-repeat;
 	background-color: #6d6c69;
@@ -45,26 +44,27 @@ ul {
 }
 
 .header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  opacity: 0.6;
-  z-index: -1;
+  	content: "";
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	background-color: #000000;
+  	opacity: 0.6;
+  	z-index: -1;
 }
 
-.header-container {
-	max-width: 1200px;
-	margin: 0 auto;
+.header-container {	
+	max-width: 100%;
 	height: 450px;
 }
 
-.header-logo-menu {
+.header-logo-menu {	
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap;	
+	max-width: 1200px;
+	margin: 0 auto;
 	padding-top: 29px;
 	padding-left: 3px;
     justify-content: space-between;
@@ -120,24 +120,19 @@ ul {
 }
 
 .main {
-	display: block;	
-	/* max-width: 1200px; */
-	/* margin: 0 auto;
-	padding: 0 15px; */
+	max-width: 100%;
 }
 
-.main-trends-case {
-	max-width: 1660px;
-}
-
-.main-trends-heading {
+.main-trends-heading,
+.main-goods-heading {
 	font-size: 20px;
 	line-height: 1.7;
 	text-transform: uppercase;
 	text-align: center;
 }
 
-.main-trends-heading::after {
+.main-trends-heading::after,
+.main-goods-heading::after {
 	content: "";
 	display: block;
 	width: 66px;
@@ -213,7 +208,8 @@ ul {
 	margin: 0;
 }
  
-.main-trends-category-list-item, .main-article-category-list-item {
+.main-trends-category-list-item, 
+.main-article-category-list-item {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 35px;
@@ -250,7 +246,8 @@ ul {
 	color: #b59f5b;
 }
 
-.main-content-case {
+.main-content-case,
+.main-goods-case {
 	display: flex;
 	max-width: 1200px;
 	margin: 52px auto 0;
@@ -294,7 +291,8 @@ ul {
 	padding: 1px 15px 0 30px;
 }
 
-.main-article-header {
+.main-article-header,
+.main-goods-title {
 	font-size: 20px;
 	line-height: 1.2;
 	text-transform: uppercase;
@@ -546,7 +544,6 @@ ul {
 
 .main-aside-themes-list {
 	list-style: none;
-	/* margin-top: 10px; */
 }
 
 .main-aside-themes-item {
@@ -574,10 +571,103 @@ ul {
 	padding-left: 4px;
 }
 
+.main-goods-case {
+	display: flex;
+	flex-direction: column;
+	margin-top: 55px;
+}
+
+.main-goods {
+	display: flex;
+	width: 100%;
+	margin: 29px auto;
+	justify-content: center;
+	align-content: end;
+}
+
+.main-goods-box {
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	margin: 0 56px;
+}
+
+.main-goods-title {
+	margin-bottom: 5px;
+}
+
+.main-goods-content-box {
+	display: flex;
+	flex-direction: column;
+	margin-top: -15px;
+	padding: 30px 0 3px;	
+	outline: 3px solid rgba(181, 159, 91, 0.6);
+	outline-offset: 20px;
+	flex-grow: 1;
+}
+
+.main-goods-caption {
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.467;
+}
+
+.main-goods-caption a {
+	text-decoration: none;
+	color: #b59f5b;
+}
+
+.main-goods-inShopBox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-goods-price {
+	margin-top: 13px;
+}
+
+.main-goods-oldprice {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.main-goods-newprice {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin: 0;
+}
+
+.rub::after {
+	content: ' \20BD';
+}
+
+.main-goods-button {
+	height: 50px;
+	margin-top: 21px;
+	padding: 0 28px;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.3;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #b59f5b;
+	border: none;
+	cursor: pointer;
+}
+
+.main-goods-button:hover {
+	background-color: #323232;
+}
+
 .footer {
 	display: block;
 	max-width: 1200px;
-	margin: 65px auto 0;
+	margin: 60px auto 0;
+	padding: 0 15px;
 	box-sizing: border-box;
 }
 
@@ -603,11 +693,11 @@ ul {
 	display: block;
 	width: 20px;
 	height: 20px;
-	margin: 0 13px 4px 13px;
+	margin: 0 11px 4px 15px;
 	text-decoration: none;
 	background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  	background-position: center;
+  	background-size: contain;
 }
 
 .social-icon:hover {
@@ -633,7 +723,7 @@ ul {
 }
 
 .copyrights a {
-	padding: 68px 0 41px 10px;
+	padding: 67px 0 41px 11px;
 	text-decoration: none;
 	color: #999;
 	font-size: 12px;
