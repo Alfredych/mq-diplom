@@ -628,13 +628,16 @@ ul {
 
 .main-goods-price {
 	margin-top: 13px;
+	padding-bottom: 8px;
+	align-content: end;
 }
 
 .main-goods-oldprice {
+	margin-bottom: 0;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1;
-	margin-bottom: 0;
+	text-decoration: line-through;
 }
 
 .main-goods-newprice {
