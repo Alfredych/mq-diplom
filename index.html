@@ -13,6 +13,7 @@
         <div class="header-container">
             <div class="header-logo-menu">
                 <a href="#0"><img class="header-logo" src="svg/noemi-logo.svg" alt="Логотип блога"></a>
+                <img class="header-menu-burger" src="svg/icons8-меню.svg" alt="Меню основных разделов сайта">
                 <nav class="header-menu">
                     <ul class="header-menu-list">
                         <li class="header-menu-item">
@@ -399,7 +400,7 @@
                                 <p class="main-goods-oldprice rub">1000</p>
                                 <p class="main-goods-newprice rub">800</p>
                             </div>
-                            <button class="main-goods-button">В магазин</button>
+                            <button class="main-goods-button" type="button">В магазин</button>
                         </div>
                     </div>
                 </div>
@@ -416,7 +417,7 @@
                                 <p class="main-goods-oldprice"></p>
                                 <p class="main-goods-newprice rub">3500</p>
                             </div>
-                            <button class="main-goods-button">В магазин</button>
+                            <button class="main-goods-button" type="button">В магазин</button>
                         </div>
                     </div>
                 </div>
@@ -432,12 +433,44 @@
                                 <p class="main-goods-oldprice rub">500</p>
                                 <p class="main-goods-newprice rub">400</p>
                             </div>
-                            <button class="main-goods-button">В магазин</button>
+                            <button class="main-goods-button" type="button">В магазин</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="popup-feedback popup-feedback-hidden">
+            <div class="popup-feedback-container">
+                <button class="popup-feedback-close" type="button">Закрыть окно</button>
+                <h3 class="popup-feedback-title">Ваш фидбек</h3>
+                <form class="popup-feedback-form" action="#0">
+                     <label class="popup-feedback-label">
+                        <span class="popup-feedback-hint">Как часто вы заходите на сайт?</span>
+                        <select class="popup-feedback-dropdown popup-feedback-field" name="frequency" required>
+                            <option class="dropdown-item" value="var-1" selected>Почти каждый день</option>
+                        </select>
+                    </label>
+                    <div class="popup-feedback-radio">
+                        <span class="popup-feedback-hint">Вы подписаны на e-mail рассылку?</span>
+                        <div class="popup-feedback-radio-wrp">
+                            <label class="popup-feedback-radio-yes">
+                                <input class="popup-feedback-radio-button" type="radio" name="subscription" required>
+                                <span class="popup-feedback-radio-var">Да</span>
+                            </label>
+                            <label class="popup-feedback-radio-no">
+                                <input class="popup-feedback-radio-button" type="radio" name="subscription" required>
+                                <span class="popup-feedback-radio-var">Нет</span>
+                            </label>
+                        </div>
+                    </div>
+                    <label class="popup-feedback-comment">
+                        <p class="popup-feedback-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+                        <textarea class="popup-feedback-field popup-feedback-comment-field" name="comment" placeholder="Может, больше рецептов?" required></textarea>
+                    </label>
+                    <button class="popup-feedback-send-button">Отправить</button>
+                </form>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="social">
