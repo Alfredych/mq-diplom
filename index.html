@@ -13,7 +13,6 @@
         <div class="header-container">
             <div class="header-logo-menu">
                 <a href="#0"><img class="header-logo" src="svg/noemi-logo.svg" alt="Логотип блога"></a>
-                <img class="header-menu-burger" src="svg/icons8-меню.svg" alt="Меню основных разделов сайта">
                 <nav class="header-menu">
                     <ul class="header-menu-list">
                         <li class="header-menu-item">
@@ -36,6 +35,7 @@
                         </li>
                     </ul>
                 </nav>
+                <img class="header-menu-burger" src="svg/icons8-меню.svg" alt="Меню основных разделов сайта">                
             </div>
             <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
@@ -390,7 +390,10 @@
             <div class="main-goods">
                 <div class="main-goods-box">
                     <div class="main-goods-imgbox">
-                        <img class="main-goods-img" src="images/shop-item-desk1.jpg" alt="изображение подушки">
+                        <img class="main-goods-img" 
+                        srcset="images/shop-item-mobile1.jpg 285w, images/shop-item-tablet1.jpg 295w, images/shop-item-desk1.jpg 300w" 
+                        sizes="(max-width: 360px) 285px, (max-width: 768px) 292px, (min-width: 769px) 300px" 
+                        alt="изображение подушки">
                     </div>
                     <div class="main-goods-content-box">
                         <h3 class="main-goods-title">Подушки на диван</h3>
@@ -406,7 +409,17 @@
                 </div>
                 <div class="main-goods-box">
                     <div class="main-goods-imgbox">
-                        <img class="main-goods-img" src="images/shop-item-desk2.jpg" alt="изображение куклы Зайчик">
+                        <img class="main-goods-img" 
+                        src="images/shop-item-desk2.jpg"
+                        srcset="
+                        images/shop-item-mobile2.jpg 285w,
+                        images/shop-item-tablet2.jpg 292w,
+                        images/shop-item-desk2.jpg 300w"
+                        sizes="
+                        (max-width: 360px) 285px,
+                        (max-width: 768px) 292px,
+                        300px"
+                        alt="изображение куклы Зайчик">
                     </div>
                     <div class="main-goods-content-box">
                         <h3 class="main-goods-title">
